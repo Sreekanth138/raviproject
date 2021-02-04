@@ -2,10 +2,6 @@
 <html>
     <head>
         <style type="text/css">
-            #content-wraper{
-                min-height: 100%;
-                min-width: 100%;
-            }
             #header{
                 height: 52px;
                 background-color: #00bf6f;
@@ -44,17 +40,17 @@
             .tabs div{
                 flex-basis: 33%;
                 padding-bottom: 10px;
-                border-bottom-color: red;
+                cursor: pointer;
             }
             .content{
                 display: flex;
-                width: 80%;
-                border: 1px solid red;
+                width: 75%;
                 margin: auto;
+                margin-top: 50px;
             }
             .team-advantage{
-                flex-basis: 32%;
-                border: 1px solid red;
+                flex-basis: 31%;
+                border: 1px solid grey;
                 margin: 1%;
             }
             .team-advantage .name{
@@ -64,6 +60,7 @@
                 text-align: center;
                 font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
                 padding-top: 15px;
+                margin-top: 20px;
             }
             .team-advantage .price{
                 color: #4a4a4a;
@@ -84,6 +81,7 @@
                 font-size: 11px;
                 font-weight: 400;
                 text-align: center;
+                margin-top: 10px;
             }
             .team-advantage .btn{
                 background-color: #007FAA;
@@ -97,11 +95,13 @@
                 font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
                 border: 1px solid #6B787F;
                 color: #fff;
+                margin-top: 35px;
+                margin-bottom: 10px;
             }
             .list li{
                 line-height: 20px;
                 font-size: 13px;
-                padding: 0 32px 12px 0px;
+                padding: 0 52px 12px 10px;
                 vertical-align: middle;
                 color: #4a4a3b;
                 font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -113,6 +113,35 @@
             body{
                 font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
             }
+            .hover1:hover{
+                border-color: #007FAA;
+                border-width: 1px;
+            }
+            .hover2:hover{
+                border-color: #671E75;
+            }
+            .hover3:hover{
+                border-color: #05467E;
+            }
+            .btns{
+                display: flex;
+                width: 75%;
+                margin: auto;
+                margin-top: 10px;
+            }
+            .btns div{
+                flex-basis: 33%;
+                text-align: center;
+            }
+            .conditions{
+                font-size: 11px;
+                color: #9b9b9b;
+                line-height: 1.5em;
+                width: 75%;
+                margin: auto;
+                margin-top: 5px;
+                padding-left: 15px;
+            }
         </style>
     </head>
     <body>
@@ -123,13 +152,12 @@
             </div>
             <h1>Choose a plan that works for you</h1>
             <div class="tabs">
-                <div>Business Plans</div>
+                <div style="color: #00BF6F;">Business Plans</div>
                 <div>Personal Plans</div>
                 <div>Buy Targeted Responses</div>
             </div>
             <div class="content">
-                <div class="team-advantage">
-                    <div><span>Save 22%*</span></div>
+                <div class="team-advantage hover1" >
                     <div class="name">TEAM ADVANTAGE</div>
                     <div class="frequency"><span class="price">₨ 1,550</span> / user / month</div>
                     <div class="user">Starting at 3 users, billed annually</div>
@@ -152,10 +180,113 @@
                             <li>All data exports (CSV, PDF, PPT, SPSS, XLS)</li>
                             <li>Accept Payments</li>
                             <li>Advanced analyze features</li>
-                            <li>SurveyMonkey industry benchmarks</li>
+                            <li>SurveyMonkey industry benchmarks</li><br/><br/>
                             <li>Multilingual surveys</li>
                         </ul>
                     </div>
+                </div>
+                <div class="team-advantage hover2">
+                    <div class="name">TEAM PREMIER</div>
+                    <div class="frequency"><span class="price">₨ 3,800</span> / user / month</div>
+                    <div class="user">Starting at 3 users, billed annually</div>
+                    <div class="btncenter"><button class="btn" style="background-color: #671E75;">SELECT</button></div>
+                    <div>
+                        <ul class="list">
+                            <li>Survey sharing with fine control over who can view and edit</li>
+                            <li>Gather comments all in one place</li>
+                            <li>Let team members analyze, filter, <br/>and export results</li>
+                            <li>Notify others when you get new responses</li>
+                            <li>Shared asset library for on-brand surveys</li>
+                            <li>Add Contributor Seats</li>
+                            <li>Add or reassign accounts at any time</li>
+                            <li>Free integrations with popular collaboration apps</li>
+                            <li>Unlimited surveys and questions</li>
+                            <li>24/7 Expedited email support</li>
+                            <li>Quizzes with custom feedback</li>
+                            <li>Custom logo, colors, and survey URL</li>
+                            <li>Question and page skip logic</li>
+                            <li>All data exports (CSV, PDF, PPT, SPSS, XLS)</li>
+                            <li>Accept Payments</li>
+                            <li>Advanced analyze features</li>
+                            <li>SurveyMonkey industry benchmarks</li>
+                            <li>Click map data visualization</li>
+                            <li>Multilingual surveys</li>
+                            <li>Crosstabs</li>
+                            <li>Unlimited filter and compare rules, data trends</li>
+                            <li>Advanced survey logic tools</li>
+                            <li>Block randomization</li>
+                            <li>White label surveys</li>
+                            <li>Survey completion redirect</li>
+                            <li>Remove SurveyMonkey footer</li>
+                            <li>Create private apps with direct API access</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-advantage hover3">
+                    <div class="name">ENTERPRISE</div>
+                    <div ><p style="color: #6B787F; font-size: 13.5px; font-weight: 400;text-align: center;
+                        font-family: National2,Helvetica Neue,Helvetica,Arial,sans-serif;">Powerful admin tools, integrations,<br/> and collaboration features for your<br/>organization</p></div>
+                    <div class="btncenter"><button class="btn" style="background-color: #05467E;">CONTACT US</button></div>
+                    <div>
+                        <ul class="list">
+                            <li>Survey sharing with fine control over who can view and edit</li>
+                            <li>Gather comments all in one place</li>
+                            <li>Let team members analyze, filter, <br/>and export results</li>
+                            <li>Notify others when you get new responses</li>
+                            <li>Shared asset library for on-brand surveys</li>
+                            <li>Add Contributor Seats</li>
+                            <li>Add or reassign accounts at any time</li>
+                            <li>Free integrations with popular collaboration apps</li>
+                            <li>Unlimited surveys and questions</li>
+                            <li>24/7 Expedited email support</li>
+                            <li>Quizzes with custom feedback</li>
+                            <li>Custom logo, colors, and survey URL</li>
+                            <li>Question and page skip logic</li>
+                            <li>All data exports (CSV, PDF, PPT, SPSS, XLS)</li>
+                            <li>Accept Payments</li>
+                            <li>Advanced analyze features</li>
+                            <li>SurveyMonkey industry benchmarks</li>
+                            <li>Click map data visualization</li>
+                            <li>Multilingual surveys</li>
+                            <li>Crosstabs</li>
+                            <li>Unlimited filter and compare rules, data trends</li>
+                            <li>Advanced survey logic tools</li>
+                            <li>Block randomization</li>
+                            <li>White label surveys</li>
+                            <li>Survey completion redirect</li>
+                            <li>Remove SurveyMonkey footer</li>
+                            <li>Unlimited API access**</li>
+                            <li>Flexible plan types for multiple users</li>
+                            <li>HIPAA-complaint features**</li>
+                            <li>Customization and branding</li>
+                            <li>Integrations with Salesforce, Marketo, Eloqua and Tableau**</li>
+                            <li>Admin dashboard and user management</li>
+                            <li>Account control and migration</li>
+                            <li>Enhanced governance and security features</li>
+                            <li>Single sign-on</li>
+                            <li>Activity tracking through audit logs</li>
+                            <li>Dedicated customer success manager</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="btns">
+                <div><button style="background-color: #007FAA; color: #fff; width: 70%; padding: 8px 24px; line-height: 1.5; font-size: 15px; font-weight: 500; font-family: National2,Helvetica Neue,Helvetica,Arial sans-serif; border: 1px solid #6B787F;">SELECT</button></div>
+                <div><button style="background-color: #671E75; color: #fff; width: 70%; padding: 8px 24px; line-height: 1.5; font-size: 15px; font-weight: 500; font-family: National2,Helvetica Neue,Helvetica,Arial sans-serif; border: 1px solid #6B787F;">SELECT</button></div>
+                <div><button style="background-color: #05467E; color: #fff; width: 70%; padding: 8px 24px; line-height: 1.5; font-size: 15px; font-weight: 500; font-family: National2,Helvetica Neue,Helvetica,Arial sans-serif; border: 1px solid #6B787F;">CONTACT US</button></div>
+            </div>
+            <div class="conditions">
+                <p>*Displayed pricing represents a 20% or more savings per user per month compared to individual Advantage and Premier plans</p>
+                <p>**Add-on features available with Enterprise plan must be purchased separately</p>
+            </div>
+            <div style="width: 75%; margin: auto; background: rgba(249,190,0,0.25); text-align: center; padding: 8px 0;font-size: 16px; font-weight: 500; line-height: 1.35; font-family: National2,Helvetica Neue,Helvetica,Arial,sans-serif; color: #4a4a3b; margin-top: 30px;">SurveyMonkey Audience includes access to Paid Features</div>
+            <div style="width: 75%; margin: auto; border: 1px solid red;">
+                <div style="width: 30%; float: left; border: 1px solid black;"><img src="https://prod.smassets.net/assets/billweb/billweb/13.9.0/assets/experiments/audience_ippm_footer_upsell.png" style="width: 100%;" alt="logo"></div>
+                <div style="float: left;">
+                    <p style="padding-left: 30px; padding-top: 10px; font-size: 16px; font-weight: 500; line-height: 1.35; font-family: National2,Helvetica Neue,Helvetica,Arial,sans-serif; color: #4a4a3b;">Get survey responses from around the world in minutes with <strong>SurveyMonkey Audience</strong></p>
+                    <p style="padding-left: 30px; padding-top: 10px; font-size: 16px; font-weight: 500; line-height: 1.35; font-family: National2,Helvetica Neue,Helvetica,Arial,sans-serif; color: #4a4a3b;">Target the types of people you want to hear from based on specific attributes, like <br/>country, gender, age, income, employment status, and more.
+                    </p>
+                    <button style="margin-top: 10px; margin-left: 30px; font-size: 16px; font-weight: 500; line-height: 1.35; font-family: National2,Helvetica Neue,Helvetica,Arial,sans-serif; color: #4a4a3b;">BUY TARGETED RESPONSES</button>
                 </div>
             </div>
         </div>
