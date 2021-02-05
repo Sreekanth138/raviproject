@@ -146,6 +146,9 @@
                                     "box2";
                 }
             }
+            #img2{
+                width: 100%;
+            }
         
         </style>
     </head>
@@ -171,9 +174,9 @@
         </div>
         <div id="grid">
             <div class="box1">
-                <form id="form_cont">
-                    <label for="userName">Enter your username</label> <br><br>
-                    <input size="35" class="input" id="userName" type="text"/>
+                <form id="form_cont" action="homepage.html">
+                    <label for="username">Enter your username</label> <br><br>
+                    <input size="35" class="input" id="username" type="text"/>
                     <br><br><br>
                     <label for="password">Enter your password</Em></label><br><br>
                     <input size="35" class="input" id="password" type="password" >
@@ -184,8 +187,10 @@
                     <br><br>
                     <a class="aTag" href="https://www.surveymonkey.com/user/sign-in/sso/?ut_source=sem_lp&ut_source2=sem&ut_source3=megamenu">Log in with SSO</a>
                     <br><br><br>
-                    <a href="https://www.youtube.com/"><button  class="btn">Login</button></a>
-                    <p id="para1"></p>
+                    
+                    <input style="width: 350px ; background-color: #00BF6F;" size="35" class="input" type="submit" id="submit">
+                    <p class="color" id="output"></p>
+                    
                     <br>
                     <p style="text-align: center; font-size: 20px;">or</p>
                     
@@ -205,7 +210,33 @@
             </div>
         </div>
             
-           
+           <script>
+                    var form = document.getElementById('form_cont');
+                var user = document.getElementById('username');
+                var pass = document.getElementById('password');
+                var submit = document.getElementById('submit');
+                var para = document.getElementById('output');
+                
+
+                function validate(e){
+                if(user.value == 'arunkr741' && pass.value == '12345'){
+                    
+                     
+                    para.textContent = "valid user"
+
+                
+                   
+                   
+                }
+                else {
+                    e.preventDefault()
+                    para.textContent = "Invalid user"
+                    para.style.color = "red"
+                }
+                }
+
+                form.addEventListener('submit', validate);
+           </script>
        
     </body>
 </html>
