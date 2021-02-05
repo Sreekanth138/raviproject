@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            *{
+                font-family:  Arial;
+            }
+            .header{
+                display: flex;
+                background-color: #00bf6f;
+                
+                height: 50px;
+                color: #fff;
+                
+            
+            }
+            img{
+                width: 5%;
+                margin-left: 2%;
+               
+            }
+            button{
+                margin-left: 50%;
+            }
+            a{
+                margin-left: 1%;
+                padding-top: 15px;
+                color: white;
+                font-weight: 700;
+                font-size: 13px;
+                text-decoration: none;
+            }
+            .add_on{
+                margin-top: 8px;
+                margin-right: 12px;
+                margin-left: 55%;
+                
+            }
+            .btn{
+                padding: 0 12px;
+                font-size: 13px;
+                height: 30px;
+                width: 80px;
+                color: #333e48;
+                border-color: #f9be00;
+                background-color: #f9be00;
+                display: inline-flex;
+                
+                justify-content: center;
+                
+                align-items: center;
+                
+                font-weight: 500;
+            }
+            .create{
+                letter-spacing: 1px;
+                text-align: center;
+            }
+            .create>h1{
+                color: #333e48;
+                line-height: 1.5;
+                margin: 0;
+                font-weight: 400;
+                letter-spacing: 1px;
+                text-align: center;
+                font-size: 16px;
+                padding-top: 50px;
+            }
+            h2{
+                font-size: 24px;
+                line-height: 1;
+                margin-bottom: 72px;
+                text-align: center;
+                color: #333e48;
+                line-height: 1.5;
+                margin: 0;
+                font-weight: 400;
+                margin-top: 20px;
+                font-weight: bold;
+            }
+            #cont {
+                display: grid;
+                grid-gap: 30px;
+                grid-template-columns: auto auto auto;
+                height: 170px;
+                
+                padding: 20px;
+                margin: 2% 15% 0 12%;
+            }
+
+                #cont div {
+                
+                font-size: 30px;
+                text-align: center;
+            }
+            .title{
+                color: #333e48;
+                line-height: 1.5;
+                margin: 0;
+                font-size: 16px;
+                
+                font-weight: bold;
+                padding-top: 50px;
+                text-align: left;
+                
+            }
+            .para{
+                color: #333e48;
+                line-height: 1.5;
+                margin: 0;
+                font-weight: 400;
+                font-size: 15px;
+                text-align: left;
+            }
+            .emptyDiv{
+                width: 100px;
+                height: 100%;
+                float: left;
+            }
+           /* Small devices (portrait tablets and large phones, 600px and up) */
+            /* @media only screen and (max-width: 600px) {
+                #cont {
+                    height: 1000px;
+                }
+            }  */
+
+            /* Medium devices (landscape tablets, 768px and up) */
+            /* @media only screen and (min-width: 768px) {
+                #cont {
+                    height: 500px;
+                }
+            }  */
+
+            /* Large devices (laptops/desktops, 992px and up) */
+            /* @media only screen and (min-width: 992px) {}  */
+
+            .item{
+                width: 360px;
+                border-radius: 4px;
+                box-shadow: 0 10px 15px 0 rgb(51 62 72 / 10%);
+                border: 1px solid #d0d2d3;
+                cursor: pointer;
+                outline: none;
+                transition: transform 200ms ease-in-out,box-shadow 200ms ease-in-out
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="header">
+                <img  src="https://cdn.smassets.net/assets/cms/cc/app/2.105.0/images/logo-surveymonkey.svg" alt="loading">
+                <a href="#">Dashboard</a>
+                <a href="#">My survey</a>
+                <a href="#">Plans & Pricing</a>
+                <div class="add_on">
+                    <a href="#" class="btn">UPGRADE</a>
+                </div>
+            </div>
+        </nav>
+        <div class="create">
+            <h1>
+                CREATE A SURVEY
+            </h1>
+        </div>
+        <div style="background-color: #00bf6f; height: 2px;width: 100px;margin: auto;"></div>
+        <div>
+            <h2>How would you like to get started?</h2>
+        </div>
+        <div id="cont">
+            <div class="item">
+                <div class="emptyDiv">
+
+                </div>
+                <div>
+                    <h3 class="title" >Build it for me</h3>
+                    <p class="para">Tell us your goals—we'll create a survey for you and guide you the rest of the way.</p>
+                </div>
+            </div>
+            <div class="item">
+            <div class="emptyDiv">
+
+            </div>
+            <div>
+                <h3 class="title">Build it for me</h3>
+                <p class="para">Tell us your goals—we'll create a survey for you and guide you the rest of the way.</p>
+            </div></div>
+            <div class="item">
+                <div class="emptyDiv">
+
+                </div>
+                <div>
+                    <h3 class="title">Build it for me</h3>
+                    <p class="para">Tell us your goals—we'll create a survey for you and guide you the rest of the way.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
