@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body{
+                font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif; 
+            }
+            #header{
+                display: grid;
+                grid-template: "surveyMonkey signUpBtn";
+            }
+            .surveyMonkey{
+                height: 60px;
+                grid-area: surveyMonkey;
+            }
+            .signUpBtn{
+                height: 60px;
+                grid-area: signUpBtn;
+            }
+            #account{
+                display: grid;
+                grid-template: "logInAc dontHaveAc"
+                                "logInAc signUp";
+            }
+            .logInAc{
+                height: 60px;
+                grid-area: logInAc;
+            }
+            .dontHaveAc{
+                height: 30px;
+                grid-area: dontHaveAc;
+            }
+            .signUp{
+                height: 30px;
+                grid-area: signUp;
+            }
+
+            .account{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: 4% 27% 2% 20%;
+                flex-basis: 40%;
+                text-align: right;
+                flex-flow: row;
+                gap: 35%;
+            }
+            .padding{
+                padding: 0;
+            }
+            #form_cont{
+                background-color: #edeeee;
+                padding: 32px;
+                border-radius: 2px;
+                height: 550px;
+                width: 350px;
+            }
+            .input{
+                border: 1px solid #D0D2D3;
+                font-size: 15px;
+                color: #333E48;
+                border-radius: 2px;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -ms-appearance: none;
+                appearance: none;
+                box-shadow: none;
+                background-color: #fff;
+                padding: 8px 12px;
+                line-height: 1.4;
+                
+                
+            }
+            .aTag{
+                color: #007FAA;
+            }
+            .text_cont{
+                
+                padding: 32px;
+                border-radius: 2px;
+                border: 1px solid black;
+                font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
+                
+                color: #333E48;
+                height: 550px;
+                text-align: left;
+            }
+            .font1{
+                font-size: 34px;
+                line-height: 1.32;
+                font-weight: 300;
+            }
+            .para{
+                margin: 50px 0 75px 0;
+            }
+            .btn{
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                padding: 8px 24px;
+                line-height: 1.5;
+                font-size: 15px;
+                border-color: #00BF6F;
+                background-color: #00BF6F;
+            }
+            .google{
+                background-image: url(/assets/userweb/userweb/326.0.0/assets/images/google.png)
+            }
+            #img{
+                width: 200px;
+            }
+            .header{
+                display: flex;
+                flex-grow: 1;
+            }
+            .sign-up{
+                margin-left: 70%;
+                
+            }
+            #img2{
+                width: 150px;
+            }
+            #grid{
+                display: grid;
+                grid-template: "box1 box2";
+                margin-top: 20px;
+                width: 70%;
+                margin: auto;
+                gap: 5%;
+            }
+            .box1{
+                height: 600px;
+                grid-area: box1;
+                margin-left: 18%;
+            }
+            .box2{
+                height: 600px;
+                grid-area: box2;
+                width: 55%;
+            }
+            @media only screen and (max-width: 768px) {
+                #grid{
+                    grid-template: "box1"
+                                    "box2";
+                }
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div class="surveyMonkey">
+                <img src="https://prod.smassets.net/assets/userweb/smlib.globaltemplates/10.18.1/assets/logo/surveymonkey_logo.svg" style="width: 240px; height: 40px; padding-left: 70px;"/>
+            </div>
+            <div class="signUpBtn">
+                <button style="width: 91px; height: 36px; background-color: white; color: #333E48; border-width: 2px;font-size: 13px; font-weight: 500; float: right; margin-right: 80px;">SIGN UP</button>
+            </div>
+        </div>
+        <div id="account">
+            <div class="logInAc">
+                <h1 style="padding-left: 38%;">Log in to your account</h1>
+            </div>
+            <div class="dontHaveAc padding">
+                <p>Don't have an account?</p>
+            </div>
+            <div class="signUp padding">
+                <h5 style="margin-top: 0; color: #007FAA;">sign Up</h5>
+            </div>
+        </div>
+        <div id="grid">
+            <div class="box1">
+                <form id="form_cont">
+                    <label for="userName">Enter your username</label> <br><br>
+                    <input size="35" class="input" id="userName" type="text"/>
+                    <br><br><br>
+                    <label for="password">Enter your password</Em></label><br><br>
+                    <input size="35" class="input" id="password" type="password" >
+                    <br><br>
+                    <input  type="checkbox"> Remember me
+                    <br><br>
+                    <a class="aTag" href="https://www.surveymonkey.com/user/forgot-password/">Forgot username or password?</a>
+                    <br><br>
+                    <a class="aTag" href="https://www.surveymonkey.com/user/sign-in/sso/?ut_source=sem_lp&ut_source2=sem&ut_source3=megamenu">Log in with SSO</a>
+                    <br><br><br>
+                    <a href="https://www.youtube.com/"><button  class="btn">Login</button></a>
+                    <p id="para1"></p>
+                    <br>
+                    <p style="text-align: center; font-size: 20px;">or</p>
+                    
+                    <p style="text-align: center; font-size: 15px;">Log in with your Office 365, LinkedIn, Facebook, Google, or Apple Account</p>
+                </form>
+                </div>
+            <div class="text_cont box2">
+                <div class="font1">
+                    Know where you really stand with Benchmarks
+                </div>
+                <div>
+                    <p class="para"> SurveyMonkey Audience has millions of qualified respondents ready to take your surveys. Get responses in 2 days</p>
+                </div>
+                <div>
+                    <img id="img2" src="https://cdn.smassets.net/assets/usercontentsvc/usercontentsvc/204.17.0/assets/UCS_Sign_In_Audience-color.svg">
+                </div>
+            </div>
+        </div>
+            
+           
+       
+    </body>
+</html>
